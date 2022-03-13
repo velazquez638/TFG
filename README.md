@@ -1,4 +1,25 @@
 # TFG
-En este repositorio se encuentran 3 archivo, 2 Jupyter Notebook y un documento en word en el que se encuentra ya redactado el estudio teórico.
-En el Jupyter de Pruebas hay realizadas diversas aproximaciones y resultados que he ido realizando.
-En el otro  Jupyter,  Ingesta_Datos, tengo redactado de una forma más ordenada los pasos que he realizado con los resultados de las simulaciones hechas hasta el momento.
+El objetivo de este trabajo es el poder realizar un análisis predictivo de datos.
+
+Para ello analizaremos los datos recogidos por un sensor colocado en un punto de la Gran Vía de Madrid.
+
+Este trabajo se divide en 3 partes:
+
+    Primera parte (Limpieza y cargado de datos en BBDD):
+              1 -> Cargado de archivos json en BBDD (MongoDB) tenemos un total de 216 json de datos de 2019 y un total de 237 archivos json de 2020.
+              2 -> Limpieza de datos, cada archivo json contiene datos en orden de millones, de los cuales no todos los datos son útiles, nos quedaremos con los siguientes datos:
+                   - Direcciones Mac
+                   - señales rssi
+                   - Seen Epoch
+                   - Seen Time
+              3 -> Cargado de los datos útiles en BBDD
+              
+    Segunda parte (Análisis):
+    
+    Para ello vamos a realizar un análisis de tódos los datos útiles, sacaremos conclusiones en espacio y tiempo de los datos así como datos estadísticos de toda la 
+    
+    información útil recopilada.
+    
+    Tercera parte (Redes Neuronales):
+    
+    Una vez realizado el estudio estadístico de los datos, crearemos un modelo predictivo basado en redes neuronales.
