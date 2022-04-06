@@ -1332,6 +1332,23 @@ for i in range(len(SeenTime_Partes)):
     
     id = Datos_Análisis_2019.insert_one(seenTime_partes).inserted_id
     print(id)
+    
+    
+from pymongo import MongoClient
+
+client = MongoClient('localhost', 27017)
+collection = cliente ["Datos_Análisis_2019"] ["SeenEpoch_Partes"]
+Datos_Análisis_2019 = collection.Datos_Análisis_2019
+
+for i in range(len(SeenEpoch_Partes)):
+    
+    SeenEpoch = SeenEpoch_Partes[i]
+    seenEpoch_partes = {
+        "SeenEpoch_Partes": SeenEpoch
+    }
+    
+    id = Datos_Análisis_2019.insert_one(seenEpoch_partes).inserted_id
+    print(id)
 
 
 # ### Ingesta de los datos de 2020 en MongoDB 
